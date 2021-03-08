@@ -37,5 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "nenv", "~> 0.1"
   spec.add_runtime_dependency "shellany", "~> 0.0"
 
-  spec.add_development_dependency "bundler", "~> 1.7"
+  # spec.add_development_dependency "bundler", "~> 1.7"
 end

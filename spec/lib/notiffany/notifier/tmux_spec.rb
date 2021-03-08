@@ -74,14 +74,14 @@ module Notiffany
 
       describe "#message_fg=" do
         it "sets message fg color" do
-          expect(sheller).to receive(:run).with("tmux set -q message-fg green")
+          expect(sheller).to receive(:run).with("tmux set -q message-style fg=green")
           subject.message_fg = "green"
         end
       end
 
       describe "#message_bg=" do
         it "sets message bg color" do
-          expect(sheller).to receive(:run).with("tmux set -q message-bg white")
+          expect(sheller).to receive(:run).with("tmux set -q message-style bg=white")
           subject.message_bg = "white"
         end
       end

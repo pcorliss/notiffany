@@ -66,11 +66,11 @@ module Notiffany
         end
 
         def message_fg=(color)
-          set("message-fg", color)
+          set("message-style", "fg=" + color)
         end
 
         def message_bg=(color)
-          set("message-bg", color)
+          set("message-style", "bg=" + color)
         end
 
         def display_time=(time)
